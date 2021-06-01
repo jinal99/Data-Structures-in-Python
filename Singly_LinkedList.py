@@ -107,7 +107,7 @@ class Singly_LinkedList:
             pointer_c = pointer_b.next_node
             flag = False
             while pointer_a.next_node is not None:
-                print("pointer_b.value " + str(pointer_b.value))
+             #   print("pointer_b.value " + str(pointer_b.value))
                 if pointer_b.value == value:
                     pointer_a.next_node = pointer_c
                     self.view_list()
