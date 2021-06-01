@@ -155,6 +155,7 @@ first_list.insert_tail(Node(2))
 first_list.insert_tail(Node(2))
 first_list.insert_tail(Node(3))
 first_list.delete_first_occurrence(2)
+first_list.delete_first_occurrence(2)
 
 
 first_list.delete_tail()
