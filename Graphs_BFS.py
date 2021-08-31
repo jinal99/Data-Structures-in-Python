@@ -54,6 +54,11 @@ class Graphs_BFS():
                     else: 
                         loop_adj_list_node  = loop_adj_list_node.next_node
                     self.vertex_attributes[current_node_index].color = "black"
+                
+        
+        for v in self.vertex_attributes:
+            print(str(v.vertex_name) + " reached from the parent " + str(v.parent) + ". The distance from the source is " + str(v.distance))
+        
 
 
         
@@ -61,4 +66,3 @@ my_graph = Graph(["r", "s", "t", "u", "v", "w", "x", "y"], [("r", "v"), ("r", "s
 
 my_graph.view_adjacency_list()
 my_graph_bfs = Graphs_BFS(my_graph,"s" )
-my_graph_bfs.vertex_list
